@@ -1,0 +1,342 @@
+/*DarkMOD*/
+.dark-mode {
+    background: linear-gradient(rgb(70, 70, 70), rgb(31, 31, 31));
+    color: white;
+}
+
+.dark-mode nav a {
+    color: #fff;
+}
+
+.dark-mode .nav li {
+    border-right: 1px solid #ffffff2f;
+}
+
+.dark-mode .fundo_topicos {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+.dark-mode footer {
+    color: #ffffff;
+}
+
+.dark-mode footer a {
+    color: #ffffff;
+}
+
+.dark-mode .forTable tr:nth-child(even) {
+    background-color: #adadad;
+}
+
+.dark-mode .forTable tbody tr:hover {
+    background-color: #ff8800;
+}
+
+/* Corpo do meu HTML */
+body {
+    background: url("imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px 100px 20px;
+    text-align: justify;
+    transition: 0.5s ease;
+}
+
+/* Menu CSS */
+header {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 6px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease-in-out;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+    border-right: 1px solid #00000010;
+    padding-right: 20px;
+}
+
+.nav a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ff8800;
+}
+
+/* Rodapé */
+footer {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 23px;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #292929;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff8800;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Logo Inicial */
+.logo_header img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo_header2 img {
+    width: 200px;
+    display: none;
+}
+
+/* Configuração da Tabela */
+.forTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.forTable th,
+.forTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.forTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.forTable th {
+    background-color: #333;
+    color: #fff;
+}
+
+.forTable tbody tr:hover {
+    background-color: #ff8800;
+}
+
+.fundo_topicos {
+    margin: 30px 0px 30px 0px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+/*ToggleDarkMod*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    border-radius: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #ff7800;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #ff7800;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Outros */
+.banner {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_radius {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
+.b_radius {
+    border: solid 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.144);
+}
+
+.primeiroTxt {
+    color: rgb(255, 255, 255);
+    padding: 5px 0px 5px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.50);
+}
+
+.forCenter {
+    text-align: center;
+}
+
+.forRight {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.formContato {
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+fieldset {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    padding: 2% 5% 2% 5%;
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 100%;
+    padding: 4px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    text-align: center;
+}
+
+.insertColor {
+    text-align: center;
+    color: rgb(251, 255, 0);
+    text-shadow: 0px 5px 20px rgb(0, 0, 0);
+}
+
+.aviso {
+    color: rgb(251, 255, 0);
+    font-size: smaller;
+}
+
+.w3c {
+    position: absolute;
+    left: 0px;
+    right: 35px;
+    top: 0px;
+    bottom: 0px;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.w3c img {
+    border: 0;
+    width: 88px;
+    height: 31px
+}
+
+legend {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button {
+    width: 120px;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 2%;
+    background-color: #0000002d;
+    color: white;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.144);
+}

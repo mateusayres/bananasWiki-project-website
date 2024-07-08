@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/BananaPNG.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleResponsive.css">
+    <title>BananasWiki: Receitas</title>
+</head>
+
+<body>
+    <header id="led-box">
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <div class="logo_header2">
+                <a href="Inicio.html" class="logo-link">
+                    <img src="imagens/logo_title.png" title="Ir para Início" alt="Logo BananasWiki">
+                </a>
+            </div>
+
+            <nav class="nav" id="nav">
+                <div class="logo_header">
+                    <a href="Inicio.html" class="logo-link">
+                        <img src="imagens/logo_title.png" title="Ir para Início" alt="Logo BananasWiki">
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="Inicio.html">Início</a></li>
+                    <li><a href="receitas.html">Melhores Receitas</a></li>
+                    <li><a href="mda&Mais.html">Moda & Mais</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><label title="Modo Claro/Escuro" class="switch">
+                            <input type="checkbox" onclick="toggleDarkMode()">
+                            <span class="slider round"></span>
+                        </label></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+    </header>
+
+    <div id="Ini"></div>
+    <div class="primeiroTxt">
+        <h1>Nossas Melhores Receitas!</h1>
+    </div>
+
+    <div class="fundo_topicos">
+        <p>
+            <b>Bem-vindo ao nosso cantinho culinário</b>, dedicado a uma das frutas mais versáteis e deliciosas que
+            existem:
+            a banana! Se você é fã dessa fruta incrível, está no lugar certo. Aqui, você encontrará uma seleção de
+            receitas
+            irresistíveis que vão desde pratos saudáveis e energéticos até sobremesas de dar água na boca. A banana é
+            uma
+            fruta rica em nutrientes e sabor, e nós estamos aqui para mostrar como explorar todo o seu potencial na
+            cozinha.
+        </p>
+        <p class="forCenter"><b><u><em>Vamos embarcar juntos nessa jornada saborosa?</em></u></b></p>
+
+        <h1>Top 3 - Receitas</h1>
+        <ol>
+            <li>
+                <h2>Banana Empanada</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/8885-banana-empanada.html" target="_blank">
+                        <img class="img_radius" src="imagens/nana_empanada.jpg" width="300" height="200"
+                            alt="Bananas empanadas"><br><img alt="saiba mais" src="imagens/saiba_mais.png" width="30"
+                            height="30"></a>
+                </div>
+
+                <p>
+                    A banana empanada é uma sobremesa irresistível, com sua mistura de doçura da banana e crocância da
+                    massa
+                    frita. Uma opção deliciosa para os amantes de sobremesas.
+                </p>
+            </li>
+
+            <li>
+                <h2>Bolinho De Chuva Com Banana</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/14950-bolinho-de-chuva-com-banana.html"
+                        target="_blank">
+                        <img class="img_radius" src="imagens/chuva_nana.jpg" width="300" height="200"
+                            alt="Bolinho De Chuva Com Banana"><br><img alt="saiba mais" src="imagens/saiba_mais.png"
+                            width="30" height="30"></a>
+                </div>
+
+                <p>
+                    O bolinho de chuva com banana é uma variação saborosa do clássico bolinho de chuva, adicionando um
+                    toque
+                    frutado e adocicado à tradicional receita. Uma combinação perfeita de conforto e indulgência.
+                </p>
+            </li>
+
+            <li>
+                <h2>Banoffe</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/176821-banoffe-de-banana.html" target="_blank">
+                        <img class="img_radius" src="imagens/banoffe.jpg" width="300" height="200"
+                            alt="receita de banofe"><br><img alt="saiba mais" src="imagens/saiba_mais.png" width="30"
+                            height="30"></a>
+                </div>
+
+                <p>
+                    O Banoffe é uma sobremesa incrivelmente indulgente que combina a doçura do caramelo, a
+                    suavidade do
+                    creme e a textura das bananas sobre uma base de biscoito. Uma explosão de sabores e uma
+                    verdadeira
+                    tentação para os amantes de doces.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <div class="fundo_topicos">
+        <h1>Mais Receitas</h1>
+        <ul style="list-style-type: square;">
+            <li>
+                <h2>Doce De Banana</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/2878-doce-de-banana.html" target="_blank">
+                        <img class="img_radius" src="imagens/doce_nana.jpg" width="300" height="200"
+                            alt="Doce de Banana"><br><img alt="saiba mais" src="imagens/saiba_mais.png" width="30"
+                            height="30"></a>
+                </div>
+
+                <p>
+                    O doce de banana é uma iguaria deliciosamente doce e versátil, podendo ser usado como cobertura,
+                    recheio
+                    ou simplesmente saboreado com uma colher. Sua simplicidade e sabor fazem dele uma adição adorável à
+                    culinária caseira.
+                </p>
+            </li>
+
+            <li>
+                <h2>Torta de Banana</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/638-torta-de-banana.html" target="_blank">
+                        <img class="img_radius" src="imagens/torta-de-banana.jpg" width="300" height="200"
+                            alt="Torta de Banana"><br><img alt="saiba mais" src="imagens/saiba_mais.png" width="30"
+                            height="30"></a>
+                </div>
+
+                <p>
+                    A torta de banana é uma sobremesa clássica que combina a doçura das bananas maduras com uma crosta
+                    de
+                    massa macia e, às vezes, um toque de canela. É uma combinação simples e reconfortante de sabores que
+                    agrada a muitos paladares, tornando-a uma opção popular para qualquer ocasião.
+                </p>
+            </li>
+
+            <li>
+                <h2>Rolinho de Banana com Chocolate</h2>
+
+                <div class="forCenter">
+                    <a href="https://www.tudogostoso.com.br/receita/140958-rolinho-de-banana-com-chocolate.html"
+                        target="_blank">
+                        <img class="img_radius" src="imagens/rolinho-de-banana-com-chocolate.jpg" width="300"
+                            height="200" alt="Rolinho de Banana com Chocolate"><br><img alt="saiba mais"
+                            src="imagens/saiba_mais.png" width="30" height="30"></a>
+                </div>
+
+                <p>
+                    O rolinho de banana com chocolate é uma sobremesa irresistível que combina o sabor naturalmente doce
+                    da
+                    banana com o indulgente chocolate. Uma explosão de sabores e texturas que agrada aos amantes de
+                    doces e
+                    chocolate.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="forRight">
+        <a href="#Ini"><img alt="Ir para inicio da pagina" src="imagens/seta_cima.png" width="50" height="50"></a>
+    </div>
+
+    <footer>
+        <p><strong>&copy; 2023 BananasWiki.</strong> Todos os direitos reservados.</p>
+        <p>Email: <a href="mailto:contato@BananasWiki.com">contato@BananasWiki.com</a></p>
+
+        <p class="w3c">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS válido">
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

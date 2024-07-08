@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/BananaPNG.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleResponsive.css">
+    <title>BananasWiki: Contato</title>
+</head>
+
+<body>
+    <header id="led-box">
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <div class="logo_header2">
+                <a href="Inicio.html" class="logo-link">
+                    <img src="imagens/logo_title.png" title="Ir para Início" alt="Logo BananasWiki">
+                </a>
+            </div>
+
+            <nav class="nav" id="nav">
+                <div class="logo_header">
+                    <a href="Inicio.html" class="logo-link">
+                        <img src="imagens/logo_title.png" title="Ir para Início" alt="Logo BananasWiki">
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="Inicio.html">Início</a></li>
+                    <li><a href="receitas.html">Melhores Receitas</a></li>
+                    <li><a href="mda&Mais.html">Moda & Mais</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><label title="Modo Claro/Escuro" class="switch">
+                            <input type="checkbox" onclick="toggleDarkMode()">
+                            <span class="slider round"></span>
+                        </label></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+    </header>
+
+    <!-- Plus -->
+    <p class="insertColor">
+        <label for="corSelector"><b>Faça um teste, mude a cor da página aqui:</b></label>
+        <input type="color" id="corSelector" onchange="alterarCor(this.value)">
+    </p>
+
+    <br>
+    <div class="formContato">
+
+        <div class="primeiroTxt">
+            <h1>Entre em Contato Conosco:</h1>
+        </div>
+
+        <form action="Inicio.html" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend><b>Informações para o Contato:</b></legend>
+                <br>
+
+                <!-- Campo texto -->
+                <label for="formNome"><b>Nome:</b>*</label>
+                <input class="b_radius" type="text" id="formNome" name="formNome" required>
+
+                <label for="formSobrenome"><b>Sobrenome:</b>*</label>
+                <input class="b_radius" type="text" id="formSobrenome" name="formSobrenome" required>
+
+                <label for="formEmail"><b>E-mail:</b></label>
+                <input class="b_radius" type="email" id="formEmail" name="formEmail">
+
+                <label for="formTelefone"><b>Telefone:</b>*</label>
+                <input class="b_radius" type="number" id="formTelefone" name="formTelefone" required>
+                <br><br><br>
+
+                <!-- Campo radio -->
+                <label><b>Sexo:</b>*</label>
+                <input class="b_radius" type="radio" id="rmasculino" name="rsexo" value="Masculino" required>
+                <label for="rmasculino">Masculino</label>
+
+                <input class="b_radius" type="radio" id="rfeminino" name="rsexo" value="Feminino">
+                <label for="rfeminino">Feminino</label>
+
+                <input class="b_radius" type="radio" id="routro" name="rsexo" value="Outro">
+                <label for="routro">Outro</label>
+                <br><br><br>
+
+                <!-- Campo checkbox -->
+                <label><b>Preferências de Receitas:</b></label><br><br>
+                <input class="b_radius" type="checkbox" id="cb01" name="cbPref"
+                    value="Receitas de sobremesas com banana.">
+                <label for="cb01">Receitas de sobremesas com banana.</label><br>
+
+                <input class="b_radius" type="checkbox" id="cb02" name="cbPref" value="Receitas salgadas com banana.">
+                <label for="cb02">Receitas salgadas com banana.</label><br>
+
+                <input class="b_radius" type="checkbox" id="cb03" name="cbPref" value="Receitas saudáveis com banana.">
+                <label for="cb03">Receitas saudáveis com banana.</label><br>
+
+                <input class="b_radius" type="checkbox" id="cb04" name="cbPref"
+                    value="Receitas de smoothies com banana.">
+                <label for="cb04">Receitas de smoothies com banana.</label>
+                <br><br><br>
+
+                <!-- Campo select -->
+
+                <label for="motivo_contato"><b>Motivo do Contato:</b>*</label>
+                <select class="b_radius" id="motivo_contato" name="motivo_contato" required>
+                    <option value="" disabled selected hidden>Selecione aqui</option>
+                    <option value="Pergunta sobre Tipos de Bananas">Pergunta sobre Tipos de Bananas</option>
+                    <option value="Receita com Banana">Receita com Banana</option>
+                    <option value="Sugestão para o Site">Sugestão para o Site</option>
+                    <option value="Relatar um Erro">Relatar um Erro</option>
+                    <option value="Parceria ou Colaboração">Parceria ou Colaboração</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <br><br><br>
+
+                <!-- Campo textarea -->
+                <label for="mensagem"><b>Mensagem:</b>*</label>
+                <textarea class="b_radius" id="mensagem" rows="5" cols="57" required></textarea>
+                <br><br><br>
+
+                <!-- Campo submit -->
+                <input class="button" type="submit" value="Enviar">
+
+                <!-- reset -->
+                <input class="button" type="reset" value="Limpar">
+
+                <!-- button -->
+                <input class="button" type="button" onclick="alert('Obrigado, conferimos que você é um ser humano.')"
+                    value="Você é um robô?">
+
+                <!-- aviso -->
+                <label class="aviso"><em>(*) São informações obrigatórias.</em></label>
+            </fieldset>
+            <br><br>
+        </form>
+    </div>
+    <br>
+
+    <div class="forRight">
+        <a href="Inicio.html"><img alt="Ir para pagina inicial" src="imagens/inicio.png" width="50" height="50"></a>
+    </div>
+
+    <footer>
+        <p><strong>&copy; 2023 BananasWiki.</strong> Todos os direitos reservados.</p>
+        <p>Email: <a href="mailto:contato@BananasWiki.com">contato@BananasWiki.com</a></p>
+
+        <p class="w3c">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS válido">
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
