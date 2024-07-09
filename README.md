@@ -11,4 +11,4 @@ Meu primeiro site, completamente responsivo com: HTML, CSS e uma pitada de JavaS
 "Aqui, exploraremos a história, os benefícios nutricionais, as variedades, as curiosidades e até mesmo algumas formas inovadoras de incorporar bananas na sua vida diária."
 
 Preview: <br><br>
-[BananasWiki.webm](https://github.com/mateusayres/bananasWiki-project-website/assets/168099824/e363dbc3-03b4-4376-bc3b-35c0638b53cb)
+![bananasWiki](https://github.com/mateusayres/bananasWiki-project-website/assets/168099824/49771a3a-ecc6-4e4a-840d-ff9931c81437)
